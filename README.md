@@ -68,3 +68,21 @@ Theming is broken down into 2 sub folders, dark and light. Each folder contains 
 Theme and ThemeDictionary help in managing theming for the application. Please check them out if you are curious.
 
 It is suggested that you write styles custom for your application in AppTheme.xaml as that it is what its intended purpose is. However, if you know what you are doing enough then feel free to move things where you see fit. Hopefully the organized structure to everything makes it easy for you to do so. If you would like to add a 3rd theme then just copy either the Dark of Light directory. The only thing you should need to change is the Colors.xaml file to change how it looks. You SHOULD NOT change your ControlTemplate for the controls between themes! ControlTemplates from my experience need to remain the same between themes but their color scheme can be changed with DynamicResources. If changing the ControlTemplate then you will need to new up the control(s) again. This becomes difficult to manage so it is suggested to leave the templates the same and just change colors.
+
+### Translations
+Translations are managed with my [WPF.Translations](https://github.com/AaronAmberman/WPF.Translations) API, NuGet [here](https://www.nuget.org/packages/WPF.Translations/). The API can be utilized slightly differently if you desire but I skipped the usage of the Translator and just used the Translation directly. Either way works, see the repo for details.
+
+#### How Do Translations Work
+You have control over that and can redo what I did. What I did though was this...
+
+Setup a nomenclature where the translations file would be called Translations.XX[XXX].xaml. So something like Translations.en.xaml or Translations.es.xaml; you could even use something like Translations.en-GB.xaml. So then in settings we set what the dynamic portion of the file name is, so for Spanish it would just be es (as my application has it set because I have no variation to the culture like es-MX). So it just boils down to what the filename is and what the culture is saved as. It is currently set like this...
+
+![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/69063b5c-8b00-4144-9f1e-236a821ee433)
+
+Notice how the culture matches what you see in the Solution Explorer (in VS) for the translation files. This is how the matching occurs.
+
+***All translation files are marked as Resource in properties so that I can use pack:///application:,,, strings to reference them.***
+
+![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/e86cbed4-52ac-46d3-90ff-d4bb95b02f9e)
+
+You can change this too if you see fit.
