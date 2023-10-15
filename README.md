@@ -79,7 +79,9 @@ Setup a nomenclature where the translations file would be called Translations.XX
 
 ![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/69063b5c-8b00-4144-9f1e-236a821ee433)
 
-Notice how the culture matches what you see in the Solution Explorer (in VS) for the translation files. This is how the matching occurs.
+Notice how the culture matches what you see in the Solution Explorer (in VS) for the translation files. This is how the matching occurs. There is no magic in the API for this, I set it in the application...
+
+![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/23d517c0-f377-40d6-8a5a-5f43ba8db5a5)
 
 ***All translation files are marked as Resource in properties so that I can use pack:///application:,,, strings to reference them.***
 
