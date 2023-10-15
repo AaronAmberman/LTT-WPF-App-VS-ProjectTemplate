@@ -57,7 +57,7 @@ There is a simple service that helps manage theming.
 ### Theming
 Theming in WPF is a complex topic and you should look into it a bit if you want to better understand how it works. A topical description would be, a StaticResource can't change at runtime unless the ControlTemplate is reapplied (meaning you will have to new up the control again that uses that resource to see the change). A DynamicResource can be changed at runtime and the rendering engine will accommodate the change and update. There is way more to it than those 2 simple sentences but it boils down to using DynamicResources ***properly*** to achieve theming.
 
-Theming is broken down into 2 sub folders, dark and light. Each folder contains a collection of XAML resource dictionaries that contains the appropriate resources. Lets break each one down.
+Theming is broken down into 2 sub folders, dark and light. Each folder contains a collection of XAML resource dictionaries that contain the appropriate resources. Lets break each one down.
 
 - AppTheme.xaml = This file contains colors, brushes, control templates, styles and other resource specific to the application. This can including overridden styles or templates.
 - Brushes = This file contains the collection of brushes that the overridden templates use. Notice the ```options:Freeze="True"``` as it is very important. Look it up if you want to know more!
