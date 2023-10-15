@@ -47,3 +47,5 @@ Here the Border will be 80% of the width of the parent containing Grid.
 ![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/60cd9a1f-e3eb-44a3-85e3-e4d81d00f0a7)
 
 Here the GridViewColumn will be a quarter (25%) of the width of the referenced ListView (*decksListView*).
+
+This is nice because now as the user resizes the window it will stay 25% at all times, unless the user breaks the dynamic sizing by manually sizing the column.
