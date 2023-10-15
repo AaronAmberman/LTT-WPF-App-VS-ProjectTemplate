@@ -41,7 +41,9 @@ Most of the converters were built in a simplistic manner. Meaning they were buil
 The ***ArithmeticConverter*** is unique in that it can assist in acheving dynamic sizing via binding. Here are two simple examples...
 
 ![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/10b27a9b-ad8c-49d1-a875-77057644b691)
+
 Here the Border will be 80% of the width of the parent containing Grid.
 
 ![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/60cd9a1f-e3eb-44a3-85e3-e4d81d00f0a7)
+
 Here the GridViewColumn will be a quarter (25%) of the width of the referenced ListView (*decksListView*).
