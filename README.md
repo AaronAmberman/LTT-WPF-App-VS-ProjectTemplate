@@ -1,8 +1,8 @@
 # LTT-WPF-App-VS-ProjectTemplate
-A Visual Studio Project Template file for my [LTT-WPF-Application](https://github.com/AaronAmberman/LTT-WPF-Application) template.
+A Visual Studio (VS) Project Template file for my [LTT-WPF-Application](https://github.com/AaronAmberman/LTT-WPF-Application) template.
 
 ## Installing and Removing
-I didn't make a VSIX installer and had my Visual Studio (VS) export the template so it was already where it needed to be when I wanted to use it. 
+I didn't make a VSIX installer and had my VS export the template so it was already where it needed to be when I wanted to use it. 
 
 I believe **you** can just copy (or delete if you wanted to remove) the ZIP file in 3 places...
 
