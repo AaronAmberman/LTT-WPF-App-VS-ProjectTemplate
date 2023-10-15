@@ -49,3 +49,10 @@ Here the Border will be 80% of the width of the parent containing Grid.
 Here the GridViewColumn will be a quarter (25%) of the width of the referenced ListView (*decksListView*).
 
 This is nice because now as the user resizes the window it will stay 25% at all times, unless the user breaks the dynamic sizing by manually sizing the column.
+
+### Services
+There is a simple service that helps manage theming.
+- Themingservice
+
+### Theming
+Theming in WPF is a complex topic and you should look into it a bit if you want to better understand how it works. A topicaly description would be, a StaticResource can't change at runtime unless the ControlTemplate is reapplied (meaning you will have to new up the control again that uses that resource to see the change). A DynamicResource can be changed at runtime and the rendering engine will accommodate the change and update. There is way more to it than those 2 simple sentences but it boils down to using DynamicResources properly to achieve theming.
