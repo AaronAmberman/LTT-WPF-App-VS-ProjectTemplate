@@ -63,7 +63,7 @@ Theming is broken down into 2 sub folders, dark and light. Each folder contains 
 - Brushes = This file contains the collection of brushes that the overridden templates use. Notice the ```options:Freeze="True"``` as it is very important. Look it up if you want to know more!
 - Colors = This file contains the collection of colors that the overridden templates use.
 - CustomControlsDarkThem/CustomControlLightTheme = This file contains overridden styles for my custom controls in [WPF.AA.CustomControls](https://github.com/AaronAmberman/WPF.AA.CustomControls), NuGet package [here](https://www.nuget.org/packages/WPF.AA.CustomControls/).
-- DarkTheme/LightTheme = This file contains the overridden styles for the WPF built in controls that wanted retemplate. This work comes from my [WPF.Themes](https://github.com/AaronAmberman/WPF.Themes) repo. There are certain controls not retemplated, see the repo for details.
+- DarkTheme/LightTheme = This file contains the overridden styles for the WPF built in controls that I wanted retemplate (because I commonly use them). This work comes from my [WPF.Themes](https://github.com/AaronAmberman/WPF.Themes) repo. There are certain controls not retemplated, see the repo for details.
 
 Theme and ThemeDictionary help in managing theming for the application. Please check them out if you are curious.
 
