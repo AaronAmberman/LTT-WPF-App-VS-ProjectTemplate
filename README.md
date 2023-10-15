@@ -63,4 +63,8 @@ Theming is broken down into 2 sub folders, dark and light. Each folder contains 
 - Brushes = This file contains the collection of brushes that the overridden templates use. Notice the ```options:Freeze="True"``` as it is very important. Look it up if you want to know more!
 - Colors = This file contains the collection of colors that the overridden templates use.
 - CustomControlsDarkThem/CustomControlLightTheme = This file contains overridden styles for my custom controls in [WPF.AA.CustomControls](https://github.com/AaronAmberman/WPF.AA.CustomControls), NuGet package [here](https://www.nuget.org/packages/WPF.AA.CustomControls/).
-- 
+- DarkTheme/LightTheme = This file contains the overridden styles for the WPF built in controls that wanted retemplate. This work comes from my [WPF.Themes](https://github.com/AaronAmberman/WPF.Themes) repo. There are certain controls not retemplated, see the repo for details.
+
+Theme and ThemeDictionary help in managing theming for the application. Please check them out if you are curious.
+
+It is suggested that you write style custom for your application in AppTheme.xaml as that it is what its intended purpose is. However, if you know what you are doing enough then feel free to move things where you see fit. Hopefully the organized structure to everything makes it easy for you to do so. If you would like to add a 3rd theme then just copy either the Dark of Light directory. The only thing you should need to change is the Colors.xaml file to change how it looks. You SHOULD NOT change your ControlTemplate for the controls between themes! ControlTemplates from my experience need to remain the same between themes but their color scheme can be changed with DynamicResources. If changing the ControlTemplate then you will need to new up the control(s) again. This becomes difficult to manage so it is suggested to leave the templates the same and just change colors.
