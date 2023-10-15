@@ -29,3 +29,19 @@ There is settings file that has 3 settings inside of it.
 - Language -> allows the user to change the language/culture currently set for the application.
 - LogPath -> allow the user to specify a custom log path at runtime.
 - Theme -> allows the user change the theme at runtime (light or dark)
+
+### Converters
+Most of the converters were built in a simplistic manner. Meaning they were built to go to the same data type; int to int, bool to bool, etc. If you need expanded functionality then feel free to go in and modify the guts of the converters. The ArithmeticConverter is a special case and does not fit into the statement above.
+- ArithmeticConverter
+- EqualsConverter
+- EqualsMultiConverter
+- NotEqualsConverter
+- NotEqualsMultiConverter
+
+The Arithmetic is unique in that it can assist in acheving dynamic sizing via binding. Here are two simple examples...
+
+![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/10b27a9b-ad8c-49d1-a875-77057644b691)
+Here the Border will be 80% of the width of the parent containing Grid.
+
+![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/60cd9a1f-e3eb-44a3-85e3-e4d81d00f0a7)
+Here the GridViewColumn will be a quarter (25%) of the width of the referenced ListView (*decksListView*).
