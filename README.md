@@ -69,7 +69,7 @@ Theme and ThemeDictionary help in managing theming for the application. Please c
 
 It is suggested that you write styles custom for your application in AppTheme.xaml as that it is what its intended purpose is. However, if you know what you are doing enough then feel free to move things where you see fit. Hopefully the organized structure to everything makes it easy for you to do so. If you would like to add a 3rd theme then just copy either the Dark of Light directory. The only thing you should need to change is the Colors.xaml file to change how it looks. You SHOULD NOT change your ControlTemplate for the controls between themes! ControlTemplates from my experience need to remain the same between themes but their color scheme can be changed with DynamicResources. If changing the ControlTemplate then you will need to new up the control(s) again. This becomes difficult to manage so it is suggested to leave the templates the same and just change colors.
 
-***All resource directionaries in themeing are marked as Resource in properties.*** (See image below.)
+***All resource directionaries in themeing are marked as Resource in properties.*** (See image below in translation section.)
 
 ## Translations
 Translations are managed with my [WPF.Translations](https://github.com/AaronAmberman/WPF.Translations) API, NuGet [here](https://www.nuget.org/packages/WPF.Translations/). The API can be utilized slightly differently if you desire but I skipped the usage of the Translator and just used the Translation directly. Either way works, see the repo for details.
