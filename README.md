@@ -72,7 +72,7 @@ It is suggested that you write styles custom for your application in AppTheme.xa
 ## Translations
 Translations are managed with my [WPF.Translations](https://github.com/AaronAmberman/WPF.Translations) API, NuGet [here](https://www.nuget.org/packages/WPF.Translations/). The API can be utilized slightly differently if you desire but I skipped the usage of the Translator and just used the Translation directly. Either way works, see the repo for details.
 
-#### How Do Translations Work
+### How Do Translations Work?
 You have control over that and can redo what I did. What I did though was this...
 
 Setup a nomenclature where the translations file would be called Translations.XX[XXX].xaml. So something like Translations.en.xaml or Translations.es.xaml; you could even use something like Translations.en-GB.xaml. So then in settings we set what the dynamic portion of the file name is, so for Spanish it would just be es (as my application has it set because I have no variation to the culture like es-MX). So it just boils down to what the filename is and what the culture is saved as. It is currently set like this...
