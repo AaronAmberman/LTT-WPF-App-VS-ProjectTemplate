@@ -31,14 +31,14 @@ There is settings file that has 3 settings inside of it.
 - Theme -> allows the user change the theme at runtime (light or dark)
 
 ### Converters
-Most of the converters were built in a simplistic manner. Meaning they were built to go to the same data type; int to int, bool to bool, etc. If you need expanded functionality then feel free to go in and modify the guts of the converters. The ArithmeticConverter is a special case and does not fit into the statement above.
+Most of the converters were built in a simplistic manner. Meaning they were built to go to the same data type; int to int, bool to bool, etc. If you need expanded functionality then feel free to go in and modify the guts of the converters. The ***ArithmeticConverter*** is a special case and does not fit into the statement above.
 - ArithmeticConverter
 - EqualsConverter
 - EqualsMultiConverter
 - NotEqualsConverter
 - NotEqualsMultiConverter
 
-The Arithmetic is unique in that it can assist in acheving dynamic sizing via binding. Here are two simple examples...
+The ***ArithmeticConverter*** is unique in that it can assist in acheving dynamic sizing via binding. Here are two simple examples...
 
 ![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/10b27a9b-ad8c-49d1-a875-77057644b691)
 Here the Border will be 80% of the width of the parent containing Grid.
