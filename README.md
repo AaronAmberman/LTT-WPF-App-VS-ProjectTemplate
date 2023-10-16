@@ -100,7 +100,7 @@ Notice ViewModelBase and the RelayCommand in the base project directory. These t
 The app template also uses a light weight ServiceLocator (SL) pattern to manage access to things. Feel free to change this to a heavier weight version, such as the one from Microsoft, or even switch it to DI or IoC. Those choices are yours but I like the light weight SL implementation because it is easy to manage.
 
 ## LogicalVisualTreeHelper
-This class is here in case for whenever you need to traverse the logical or visual trees in WPF. If you don't know what those are then look up information about them. Not really needed in MVVM but there just in case.
+This class is here in case you need to traverse the logical or visual trees in WPF. If you don't know what those are then look up information about them. Not really needed in MVVM but there just in case.
 
 ## WpfImagery.xaml
 The drawing for these resources come from the Visual Studio Image Library 2019. Google it. I got the data from the XAML files in the image directory.
