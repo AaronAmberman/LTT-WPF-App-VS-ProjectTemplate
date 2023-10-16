@@ -118,4 +118,4 @@ There is a lot of setup work here. Rather than it explain it line by line just r
 Happy coding!
 
 # Example
-See my [DeltaSql](https://github.com/AaronAmberman/DeltaSql) for an example of the use of this template.
+See my [DeltaSql](https://github.com/AaronAmberman/DeltaSql) repo for an example of the use.
