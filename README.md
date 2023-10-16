@@ -90,3 +90,32 @@ Notice how the culture matches what you see in the Solution Explorer (in VS) for
 ![image](https://github.com/AaronAmberman/LTT-WPF-App-VS-ProjectTemplate/assets/23512394/e86cbed4-52ac-46d3-90ff-d4bb95b02f9e)
 
 You can change this too if you see fit.
+
+## View Models
+This application template is setup to use MVVM, kind of. It is more like V-VM without the M as it doesn't contain many models but there wasn't much data to be managed in the template so I just skipped adding them. In an MVVM environment I am honestly light on the models. Things in this app template could move to models but hey that is something you can do if you desire it. :) 
+
+Notice ViewModelBase and the RelayCommand in the base project directory. These two classes are common build pieces to MVVM that you have probably seen in other projects by now.
+
+## ServiceLocator
+The app template also uses a light weight ServiceLocator (SL) pattern to manage access to things. Feel free to change this to a heavier weight version, such as the one from Microsoft, or even switch it to DI or IoC. Those choices are yours but I like the light weight SL implementation because it is easy to manage.
+
+## LogicalVisualTreeHelper
+This class is here in case for whatever you need to traverse the logical or visual trees in WPF. If you don't know what those are then look up information about them. Not really needed in MVVM but there just in case.
+
+## WpfImagery.xaml
+The drawing for these resources come from the Visual Studio Image Library 2019. Google it. I got the data from the XAML files in the image directory.
+
+# The Application Itself
+## MainWindow.xaml
+The MainWindow contains a settings button and 4 [InternalDialogs](https://github.com/AaronAmberman/WPF.InternalDialogs) from my [WPF.InternalDialogs](https://www.nuget.org/packages/WPF.InternalDialogs/) API. Please check out the repo for more information in InternalDialogs. The 4 InternalDialogs are a settings dialog, an about dialog, a progress bar view dialog and a message box dialog. Thats about it for the main window, left mostly blank on purposes. 
+
+## App.xaml
+This just merges all the satelite resource dictionaries for the application together. Order is IMPORTANT!!!
+
+### App.xaml.cs
+There is a lot of setp work here. Rather than it explain it line by line just read the code in the file to see how things are initialized.
+
+Happy coding!
+
+# Example
+See my [DeltaSql](https://github.com/AaronAmberman/DeltaSql) for an example of the use of this template.
