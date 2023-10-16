@@ -113,7 +113,7 @@ The MainWindow contains a settings button and 4 [InternalDialogs](https://github
 This just merges all the satelite resource dictionaries for the application together. Order is IMPORTANT!!!
 
 ### App.xaml.cs
-There is a lot of setp work here. Rather than it explain it line by line just read the code in the file to see how things are initialized.
+There is a lot of setup work here. Rather than it explain it line by line just read the code in the file to see how things are initialized.
 
 Happy coding!
 
