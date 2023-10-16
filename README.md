@@ -107,7 +107,7 @@ The drawing for these resources come from the Visual Studio Image Library 2019. 
 
 # The Application Itself
 ## MainWindow.xaml
-The MainWindow contains a settings button and 4 [InternalDialogs](https://github.com/AaronAmberman/WPF.InternalDialogs) from my [WPF.InternalDialogs](https://www.nuget.org/packages/WPF.InternalDialogs/) API. Please check out the repo for more information on InternalDialogs. The 4 InternalDialogs are a settings dialog, an about dialog, a progress bar view dialog and a message box dialog. Thats about it for the main window, left mostly blank on purposes. 
+The MainWindow contains a settings button and 4 [InternalDialogs](https://github.com/AaronAmberman/WPF.InternalDialogs) from my [WPF.InternalDialogs](https://www.nuget.org/packages/WPF.InternalDialogs/) API. Please check out the repo for more information on InternalDialogs. The 4 InternalDialogs are a settings dialog, an about dialog, a progress bar view dialog and a message box dialog. That's about it for the main window, left mostly blank on purposes. 
 
 ## App.xaml
 This just merges all the satelite resource dictionaries for the application together. Order is IMPORTANT!!!
